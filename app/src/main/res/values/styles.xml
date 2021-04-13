@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style_temp_tv">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+    <style name="style_temp_tv_up" parent="style_temp_tv">
+        <item name="android:layout_marginStart">20dp</item>
+    </style>
+
+    <style name="style_temp_tv_down" parent="style_temp_tv">
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+    </style>
+
+
+    <style name="style_tempv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="rect_height">17dp</item>
+        <item name="rect_width">15dp</item>
+    </style>
+
+    <style name="style_tempv_up"  parent="style_tempv">
+        <item name="android:layout_marginStart">42dp</item>
+        <item name="android:layout_marginTop">22dp</item>
+    </style>
+
+    <style name="style_tempv_down" parent="style_tempv">
+        <item name="android:layout_marginStart">42dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="reverse">true</item>
+    </style>
+
+</resources>

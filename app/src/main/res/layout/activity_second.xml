@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ringScale="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:orientation="vertical"
+    tools:context=".activity.SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_variant"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/backIbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:contentDescription="@string/description_back"
+            android:src="@mipmap/sback" />
+
+        <ImageView
+            android:id="@+id/ifemesIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/titleTv"
+            android:contentDescription="@string/description_tip"
+            android:src="@mipmap/ifemes8" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="FemeTiteS8"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/second_bg1"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp">
+
+                <RelativeLayout
+                    android:id="@+id/rv1"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@mipmap/bgsb">
+
+                    <com.example.jnidemo.view.CircleProgressView
+                        android:id="@+id/powerCpv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        ringScale:cicleRadius="60dp"
+                        ringScale:displayTextUnit="W"
+                        ringScale:maxProgress="45"
+                        ringScale:minProgress="0"
+                        ringScale:sweepAngle="270"
+                        ringScale:thumb="@mipmap/isbthumb"
+                        ringScale:titleText="功率" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/powrReduceIbtn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/selector_btn_reduce" />
+
+                        <ImageButton
+                            android:id="@+id/powrAddIbtn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/selector_btn_add" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rv2"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@mipmap/bgsb">
+
+                    <com.example.jnidemo.view.CircleProgressView
+                        android:id="@+id/temperatureCpv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        ringScale:cicleRadius="60dp"
+                        ringScale:displayTextUnit="℃"
+                        ringScale:maxProgress="45"
+                        ringScale:minProgress="38"
+                        ringScale:sweepAngle="270"
+                        ringScale:thumb="@mipmap/isbthumb"
+                        ringScale:titleText="温度" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/temperatureReduceIbtn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/selector_btn_reduce" />
+
+                        <ImageButton
+                            android:id="@+id/temperatureAddIbtn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/selector_btn_add" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/rv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_time"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_set_time"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seekLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv"
+                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <ImageButton
+                    android:id="@+id/timeReduceIbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/selector_btn_reduce1" />
+
+                <SeekBar
+                    android:id="@+id/timeSb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bribg"
+                    android:max="30"
+                    android:maxHeight="5dp"
+                    android:min="0"
+                    android:minHeight="5dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seek_style"
+                    android:thumb="@mipmap/isbthumb"
+                    android:thumbOffset="0dp" />
+
+                <ImageButton
+                    android:id="@+id/timeAddIbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/selector_btn_add1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seekLl"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:background="@mipmap/bgtemp"
+                android:orientation="horizontal"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="实测温度(℃)"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/tfeme">
+
+                    <com.example.jnidemo.view.TemperatureView
+                        android:id="@+id/tempView1"
+                        style="@style/style_tempv_up"
+                        android:layout_marginStart="52dp" />
+
+                    <com.example.jnidemo.view.TemperatureView
+                        android:id="@+id/tempView2"
+                        style="@style/style_tempv_up"
+                        android:layout_marginStart="40dp"
+                        android:layout_toEndOf="@id/tempView1" />
+
+                    <com.example.jnidemo.view.TemperatureView
+                        android:id="@+id/tempView3"
+                        style="@style/style_tempv_up"
+                        android:layout_marginStart="42dp"
+                        android:layout_toEndOf="@id/tempView2" />
+
+                    <com.example.jnidemo.view.TemperatureView
+                        android:id="@+id/tempView4"
+                        style="@style/style_tempv_up"
+                        android:layout_toEndOf="@id/tempView3" />
+
+                    <com.example.jnidemo.view.TemperatureView
+                        android:id="@+id/tempView5"
+                        style="@style/style_tempv_down"
+                        android:layout_marginStart="52dp" />
+
+                    <com.example.jnidemo.view.TemperatureView
+                        android:id="@+id/tempView6"
+                        style="@style/style_tempv_down"
+                        android:layout_marginStart="40dp"
+                        android:layout_toEndOf="@id/tempView5" />
+
+                    <com.example.jnidemo.view.TemperatureView
+                        android:id="@+id/tempView7"
+                        style="@style/style_tempv_down"
+                        android:layout_marginStart="42dp"
+                        android:layout_toEndOf="@id/tempView6" />
+
+                    <com.example.jnidemo.view.TemperatureView
+                        android:id="@+id/tempView8"
+                        style="@style/style_tempv_down"
+                        android:layout_toEndOf="@id/tempView7" />
+
+                    <TextView
+                        android:id="@+id/tempTv1"
+                        style="@style/style_temp_tv_up"
+                        android:layout_marginStart="40dp" />
+
+                    <TextView
+                        android:id="@+id/tempTv2"
+                        style="@style/style_temp_tv_up"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/tempTv1" />
+
+                    <TextView
+                        android:id="@+id/tempTv3"
+                        style="@style/style_temp_tv_up"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@id/tempTv2" />
+
+                    <TextView
+                        android:id="@+id/tempTv4"
+                        style="@style/style_temp_tv_up"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@id/tempTv3" />
+
+                    <TextView
+                        android:id="@+id/tempTv5"
+                        style="@style/style_temp_tv_down"
+                        android:layout_marginStart="40dp" />
+
+                    <TextView
+                        android:id="@+id/tempTv6"
+                        style="@style/style_temp_tv_down"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/tempTv5" />
+
+                    <TextView
+                        android:id="@+id/tempTv7"
+                        style="@style/style_temp_tv_down"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@id/tempTv6" />
+
+                    <TextView
+                        android:id="@+id/tempTv8"
+                        style="@style/style_temp_tv_down"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@id/tempTv7" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/second_bg2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:text="@string/string_time_rest"
+                android:textColor="@color/color_gray"
+                android:textSize="20sp" />
+
+            <com.example.jnidemo.view.CountTimeTextView
+                android:id="@+id/countTimeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="00:00"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_gray" />
+
+            <ImageButton
+                android:id="@+id/mbiIbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_btn_mbi" />
+
+            <CheckBox
+                android:id="@+id/standbyCb"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/selector_cb_start_stop"
+                android:button="@null"
+                android:paddingStart="90dp"
+                android:text="@string/cb_stanby"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

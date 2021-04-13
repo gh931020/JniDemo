@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">JniDemo</string>
+    <string name="string_temperature">%1$.2f ℃</string>
+    <string name="string_title">MFR</string>
+    <string name="string_remaining_times">剩余次数</string>
+    <string name="description_back">back</string>
+    <string name="description_tip">tip</string>
+    <string name="string_set_time">设置时间</string>
+    <string name="string_time">%1$d:00</string>
+    <string name="string_time_rest">剩余时间</string>
+    <string name="cb_stanby">待机</string>
+    <string name="cb_start">开始</string>
+    <string name="time_zero">00:00</string>
+    <string name="string_order_parse">指令解析</string>
+    <string name="btn_receive">接收指令</string>
+    <string name="btn_receive_data">指令数据</string>
+    <string name="btn_send">发送指令</string>
+    <string name="btn_clean">清空</string>
+    <string name="string_out_area">输出区</string>
+</resources>

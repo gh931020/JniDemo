@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- declare-styleable表示为自定义的属性-->
+    <!-- format表示为可接受的参数类型-->
+
+    <!--integer int型-->
+    <!--boolean boolean-->
+    <!--color 颜色-->
+    <!--dimension 尺寸-->
+    <!--enum 枚举-->
+    <!--flag 位或运算-->
+    <!--float float型-->
+    <!--fraction 百分数-->
+    <!--reference 资源文件-->
+    <!--string 字符串-->
+    <declare-styleable name="CircleProgressView">
+
+        <!-- 圆环的宽度 -->
+        <attr name="cicleWidth" format="dimension"/>
+        <!-- 圆环的角度 -->
+        <attr name="sweepAngle" format="integer"/>
+
+        <!-- 滑动圆弧的背景 -->
+        <attr name="cicleSlideBgColor" format="reference|color"/>
+        <!-- 底部圆弧的背景 -->
+        <attr name="cicleBgColor" format="reference|color"/>
+        <!-- 外圆半径 -->
+        <attr name="cicleRadius" format="dimension"/>
+        <!-- 进度最大值 -->
+        <attr name="maxProgress" format="integer"/>
+        <!-- 进度最小值 -->
+        <attr name="minProgress" format="integer"/>
+        <!-- 当前进度 -->
+        <attr name="currentProgress" format="integer"/>
+
+        <!-- 滑块图片 -->
+        <attr name="thumb" format="reference"/>
+        <!-- 滑块图片尺寸 -->
+        <attr name="thumbSize" format="dimension"/>
+
+
+        <!-- 进度值文字的颜色 -->
+        <attr name="textColor" format="reference|color"/>
+        <!-- 进度值文字的大小 -->
+        <attr name="textSize" format="dimension"/>
+
+        <!-- 标题的文字,颜色和字体大小 -->
+        <attr name="titleText" format="string"  localization="suggested" />
+        <attr name="titleTextColor" format="reference|color"/>
+        <attr name="titleTextSize" format="dimension"/>
+
+        <!-- 显示数值的文字,颜色和字体大小 -->
+        <attr name="displayText" format="string"  localization="suggested" />
+        <attr name="displayTextColor" format="reference|color"/>
+        <attr name="displayTextSize" format="dimension"/>
+        <attr name="displayTextUnit" format="string"   localization="suggested"/>
+        <attr name="displayTextUnitSize" format="dimension"/>
+
+    </declare-styleable>
+    <declare-styleable name="TemperatureView">
+        <attr name="rect_width" format="dimension"/>
+        <attr name="rect_height" format="dimension"/>
+        <attr name="reverse" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>
