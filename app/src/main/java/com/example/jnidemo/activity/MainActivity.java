@@ -37,6 +37,7 @@ public class MainActivity extends BaseActivity {
     private ImageButton firstIbtn;
     private ImageButton secondIbtn;
     private ImageButton thirdIbtn;
+    private Button progressBarBtn;
 
     @Override
     protected int getLayoutId() {
@@ -48,6 +49,7 @@ public class MainActivity extends BaseActivity {
         firstIbtn = findViewById(R.id.firstIbtn);
         secondIbtn = findViewById(R.id.secondIbtn);
         thirdIbtn = findViewById(R.id.thirdIbtn);
+        progressBarBtn = findViewById(R.id.progressBtn);
     }
 
     @Override
@@ -55,6 +57,7 @@ public class MainActivity extends BaseActivity {
         firstIbtn.setOnClickListener(v -> FirstActivity.start(MainActivity.this));
         secondIbtn.setOnClickListener(v -> SecondActivity.start(MainActivity.this));
         thirdIbtn.setOnClickListener(v -> ThirdActivity.start(MainActivity.this));
+        progressBarBtn.setOnClickListener(v -> ProgressActivity.start(MainActivity.this));
 
     }
 

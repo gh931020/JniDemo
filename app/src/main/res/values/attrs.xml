@@ -65,4 +65,172 @@
 
     </declare-styleable>
 
+    <declare-styleable name="ArcSeekBar">
+        <attr name="arcStrokeWidth" format="dimension"/>
+        <attr name="arcStrokeCap" format="enum">
+            <enum name="BUTT" value="1"/>
+            <enum name="SQUARE" value="2"/>
+            <enum name="ROUND" value="3"/>
+        </attr>
+        <attr name="arcNormalColor" format="color"/>
+        <attr name="arcProgressColor" format="color"/>
+        <attr name="arcStartAngle" format="integer"/>
+        <attr name="arcSweepAngle" format="float"/>
+        <attr name="arcMax" format="float"/>
+        <attr name="arcProgress" format="float"/>
+        <attr name="arcDuration" format="integer"/>
+        <attr name="arcLabelText" format="string"/>
+        <attr name="arcLabelTextColor" format="color"/>
+        <attr name="arcLabelTextSize" format="dimension"/>
+        <attr name="arcLabelPaddingTop" format="dimension"/>
+        <attr name="arcLabelPaddingBottom" format="dimension"/>
+        <attr name="arcLabelPaddingLeft" format="dimension"/>
+        <attr name="arcLabelPaddingRight" format="dimension"/>
+        <attr name="arcShowLabel" format="boolean"/>
+        <attr name="arcShowTick" format="boolean"/>
+        <attr name="arcTickStrokeWidth" format="dimension"/>
+        <attr name="arcTickPadding" format="dimension"/>
+        <attr name="arcTickSplitAngle" format="integer"/>
+        <attr name="arcBlockAngle" format="integer"/>
+        <attr name="arcThumbStrokeWidth" format="dimension"/>
+        <attr name="arcThumbColor" format="color"/>
+        <attr name="arcThumbRadius" format="dimension"/>
+        <attr name="arcThumbRadiusEnlarges" format="dimension"/>
+        <attr name="arcShowThumb" format="boolean"/>
+        <attr name="arcAllowableOffsets" format="dimension"/>
+        <attr name="arcEnabledDrag" format="boolean"/>
+        <attr name="arcEnabledSingle" format="boolean"/>
+
+        <attr name="arcHasGap" format="boolean"/>
+        <attr name="arcGapNum" format="integer"/>
+        <attr name="arcGapAngle" format="float"/>
+        <attr name="arcShowValue" format="boolean"/>
+        <attr name="arcMinValue" format="float"/>
+        <attr name="arcMaxValue" format="float"/>
+        <attr name="arcUnitText" format="string"/>
+        <attr name="arcValueTextSize" format="dimension"/>
+        <attr name="arcValueTextColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ArcSeekBarPlus">
+        <attr name="arcpStrokeWidth" format="dimension"/>
+        <attr name="arcpStrokeCap" format="enum">
+            <enum name="BUTT" value="1"/>
+            <enum name="SQUARE" value="2"/>
+            <enum name="ROUND" value="3"/>
+        </attr>
+        <attr name="arcpNormalColor" format="color"/>
+        <attr name="arcpProgressColor" format="color"/>
+        <attr name="arcpStartAngle" format="integer"/>
+        <attr name="arcpSweepAngle" format="float"/>
+        <attr name="arcpMax" format="integer"/>
+        <attr name="arcpProgress" format="integer"/>
+        <attr name="arcpDuration" format="integer"/>
+        <attr name="arcpLabelText" format="string"/>
+        <attr name="arcpLabelTextColor" format="color"/>
+        <attr name="arcpLabelTextSize" format="dimension"/>
+        <attr name="arcpLabelPaddingTop" format="dimension"/>
+        <attr name="arcpLabelPaddingBottom" format="dimension"/>
+        <attr name="arcpLabelPaddingLeft" format="dimension"/>
+        <attr name="arcpLabelPaddingRight" format="dimension"/>
+        <attr name="arcpShowLabel" format="boolean"/>
+        <attr name="arcpShowTick" format="boolean"/>
+        <attr name="arcpTickStrokeWidth" format="dimension"/>
+        <attr name="arcpTickPadding" format="dimension"/>
+        <attr name="arcpTickSplitAngle" format="integer"/>
+        <attr name="arcpBlockAngle" format="integer"/>
+        <attr name="arcpThumbStrokeWidth" format="dimension"/>
+        <attr name="arcpThumbColor" format="color"/>
+        <attr name="arcpThumbRadius" format="dimension"/>
+        <attr name="arcpThumbRadiusEnlarges" format="dimension"/>
+        <attr name="arcpShowThumb" format="boolean"/>
+        <attr name="arcpAllowableOffsets" format="dimension"/>
+        <attr name="arcpEnabledDrag" format="boolean"/>
+        <attr name="arcpEnabledSingle" format="boolean"/>
+
+        <attr name="arcpHasGap" format="boolean"/>
+        <attr name="arcpGapNum" format="integer"/>
+        <attr name="arcpGapAngle" format="float"/>
+        <attr name="arcpShowValue" format="boolean"/>
+        <attr name="arcpMinValue" format="integer"/>
+
+        <!-- 固定点占用的间隙个数 -->
+        <attr name="arcpPointNum" format="integer"/>
+        <!-- 固定点Value值 -->
+        <attr name="arcpPointValue" format="integer"/>
+
+        <attr name="arcpMaxValue" format="integer"/>
+        <attr name="arcpUnitText" format="string"/>
+        <attr name="arcpValueTextSize" format="dimension"/>
+        <attr name="arcpValueTextColor" format="color"/>
+        <attr name="arcpDecimal" format="float"/>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="MagicTextView">
+        <attr name="mtvInnerShadowColor" format="color"/>
+        <attr name="mtvInnerShadowRadius" format="dimension"/>
+        <attr name="mtvInnerShadowDx" format="dimension"/>
+        <attr name="mtvInnerShadowDy" format="dimension"/>
+
+        <attr name="mtvOuterShadowColor" format="color"/>
+        <attr name="mtvOuterShadowRadius" format="dimension"/>
+        <attr name="mtvOuterShadowDx" format="dimension"/>
+        <attr name="mtvOuterShadowDy" format="dimension"/>
+
+        <attr name="mtvTypeface" format="string" />
+
+        <attr name="mtvForeground" format="reference|color"/>
+        <attr name="mtvBackground" format="reference|color"/>
+
+        <attr name="mtvStrokeWidth" format="dimension" />
+        <attr name="mtvStrokeMiter" format="dimension" />
+        <attr name="mtvStrokeColor" format="color" />
+        <attr name="mtvStrokeJoinStyle">
+            <enum name="miter" value="0" />
+            <enum name="bevel" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SuitLines">
+        <attr name="xySize" format="float" />
+        <attr name="xyColor" format="reference|color" />
+        <attr name="lineType">
+            <enum name="curve" value="0" />
+            <enum name="segment" value="1" />
+        </attr>
+        <attr name="lineStyle">
+            <enum name="solid" value="0" />
+            <enum name="dashed" value="1" />
+        </attr>
+        <attr name="needEdgeEffect" format="boolean" />
+        <attr name="colorEdgeEffect" format="reference|color" />
+        <attr name="needClickHint" format="boolean" />
+        <attr name="colorHint" format="reference|color" />
+        <attr name="maxOfVisible" format="integer" />
+        <attr name="countOfY" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="AnimView">
+<!--        椭圆动画高度-->
+        <attr name="avOvalTotalHeight" format="dimension" />
+<!--        椭圆动画宽度-->
+        <attr name="avOvalTotalWidth" format="dimension" />
+<!--        椭圆单个宽度-->
+        <attr name="avOvalWidth" format="dimension" />
+<!--        椭圆间的间距-->
+        <attr name="avOvalGap" format="dimension" />
+<!--        每组椭圆的个数-->
+        <attr name="avOvalNumPerGroup" format="integer" />
+<!--        椭圆组数-->
+        <attr name="avOvalGroupNum" format="integer" />
+<!--        动画间隔时间-->
+        <attr name="avAnimDuration" format="integer" />
+<!--        椭圆的颜色-->
+        <attr name="avOvalColor" format="color"/>
+    </declare-styleable>
+
 </resources>

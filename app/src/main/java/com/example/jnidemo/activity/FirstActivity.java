@@ -202,7 +202,7 @@ public class FirstActivity extends BaseActivity {
      */
     public void setTemperature(double temperature){
         Log.i(TAG, "setTemperature: "+ temperature);
-        Log.i(TAG, "setTemperature: thread"+ Thread.currentThread());
+        Log.i(TAG, "setTemperature: thread"+ Thread.currentThread().getId());
         //因为是在子线程中调用的C,因此这里需要回到主线程更新UI
         runOnUiThread(() -> handleResult(temperature));
     }

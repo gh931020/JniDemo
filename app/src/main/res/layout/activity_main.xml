@@ -17,6 +17,7 @@
         app:layout_constraintEnd_toStartOf="@id/secondIbtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/secondIbtn"
         android:layout_width="wrap_content"
@@ -40,6 +41,14 @@
         app:layout_constraintStart_toEndOf="@id/secondIbtn"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.546" />
+
+    <Button
+        android:id="@+id/progressBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试进度条"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

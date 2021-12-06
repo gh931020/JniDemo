@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/bizhi"
+    android:gravity="center">
+
+    <com.example.jnidemo.view.MagicTextView
+        android:id="@+id/mtvTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valueEt"
+        android:text="12W"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:mtvStrokeColor="#19C3C1C1"
+        app:mtvStrokeJoinStyle="miter"
+        app:mtvStrokeWidth="8dp" />
+
+    <com.example.jnidemo.view.ArcSeekBarPlus
+        android:id="@+id/arcSeekBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:arcHasGap="true"
+        app:arcLabelPaddingBottom="10dp"
+        app:arcLabelTextColor="@color/white"
+        app:arcNormalColor="#52919090"
+        app:arcProgress="20"
+        app:arcProgressColor="#D33CDBF9"
+        app:arcShowThumb="true"
+        app:arcShowValue="true"
+        app:arcStartAngle="130"
+        app:arcStrokeCap="SQUARE"
+        app:arcSweepAngle="280"
+        app:arcpMinValue="50"
+        app:arcpMaxValue="5000"
+        app:arcUnitText="W"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/arcSeekBar1"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bg_circle_corner"
+        android:gravity="center"
+        android:text="功率"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/reduceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arcSeekBar1"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arcSeekBar1"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/reduceBtn"
+        android:text="+" />
+
+    <EditText
+        android:id="@+id/valueEt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addBtn"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:focusable="false"/>
+
+    <Button
+        android:id="@+id/ensureBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reduceBtn"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/valueEt"
+        android:text="确定" />
+
+
+</RelativeLayout>
